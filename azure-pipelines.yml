@@ -94,7 +94,7 @@ stages:
         artifactName: dropDacpac
       condition: succeededOrFailed()
 
- stage: DBAVerificationScript
+- stage: DBAVerificationScript
   displayName: 'Script database schema changes'
   dependsOn: Build
   jobs:
